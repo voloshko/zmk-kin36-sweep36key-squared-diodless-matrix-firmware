@@ -68,6 +68,40 @@ ZMK Firmware for Kin36, Sweep36(ZMK Cradio shield but with 36 keys), Sweep Squar
 #+caption: tri layer
 [[file:images/tri-layer.png]]
 
+*** Chords (Combos)
+
+Press two keys simultaneously (within 40ms) to output an entire word with a trailing space. Works on default and windows layers. A 150ms prior-idle guard prevents misfires during fast typing.
+
+Defined in =config/combos.dtsi=. Tune =timeout-ms= (combo window) and =require-prior-idle-ms= (misfire guard) to taste.
+
+**** Word chords
+
+| Chord | Word | Chord | Word | Chord | Word |
+|-------+------+-------+------+-------+------|
+| T+H | the | T+A | that | A+N | and |
+| H+V | have | R+F | for | O+N | not |
+| W+I | with | Y+U | you | T+I | this |
+| U+B | but | F+M | from | T+Y | they |
+| W+L | will | W+D | would | R+T | there |
+| E+T | their | W+A | what | A+B | about |
+| W+C | which | W+N | when | S+J | just |
+| K+N | know | K+L | like | I+N | into |
+| R+Y | your | D+C | could | T+O | other |
+| T+K | think | A+L | also | A+F | after |
+| C+B | because | S+H | should | T+G | through |
+| F+B | before | T+B | between | W+O | without |
+| S+M | something | R+A | already | P+L | people |
+| T+S | these | | | | |
+
+**** Utility chords
+
+| Chord | Output |
+|-------+--------|
+| J+K | Escape |
+| U+I | =(= |
+| I+O | =)= |
+| W+F | Caps Word |
+
 *** Mouse
 
 - hold left tab (to enter left layer), and press space key to enter mouse layer
