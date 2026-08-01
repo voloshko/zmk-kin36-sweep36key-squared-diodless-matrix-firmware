@@ -2,4 +2,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Run 21505260284 resolved `main` to this commit on 2026-01-30.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@ac7f75b8591d39aaf3b66b9d26f26c9ed921a009
